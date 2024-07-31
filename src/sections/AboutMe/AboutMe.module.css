@@ -1,0 +1,27 @@
+@keyframes rotate {
+    from {
+        transform: rotateZ(360deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+.rotateInf {
+    animation: rotate 50s infinite linear; /* Adjust the duration as needed */
+}
+
+.container{
+
+}
+
+
+.hvrElement:hover +  .mainText{
+    transition: all 0.25s ease-in-out;
+    opacity: 0;
+}
+
+.mainText{
+    transition: all 2s ease-in-out;
+
+}

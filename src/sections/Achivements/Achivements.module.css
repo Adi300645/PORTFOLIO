@@ -1,0 +1,36 @@
+.lineMoveX{
+    animation: movelineX 1s ease-in-out;
+    animation-timeline: view(auto auto);
+}
+
+.lineMoveY{
+    animation: movelineY 1s ease-in-out;
+    animation-timeline: view(auto auto);
+
+}
+
+@keyframes movelineX{
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes movelineY{
+    from  {
+        opacity: 0;
+        height: 4rem;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        height: 54rem;
+        transform: translateY(0%);
+    }
+}
+
+.imgGrade{
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(0, 0, 0, 0.88) 46%, rgb(255, 255, 255) 100%);
+}

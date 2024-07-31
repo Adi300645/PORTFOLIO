@@ -1,0 +1,64 @@
+.backMixBlendBlack{
+    background-image: url("/noise.png"),url("/clif hanger.jpg");
+    background-size: cover,60%;
+    background-blend-mode: multiply;
+    background-position: center;
+    animation: growBack 1s ease-in-out;
+    animation-timeline: view(auto auto);
+
+    /* background-size: cover; */
+}
+
+
+@keyframes growBack{
+    from {
+        background-size: cover,50%;
+    }
+    to {
+        background-size: cover,90%;
+    }
+}
+
+.craft{
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.aesthetics{
+    color: transparent;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+.GrowingBox{
+    /* background-image: url("/noise.png"); */
+    /* background-color: var(--growBoxColor);
+    background-size: var(--backgroundSize);
+    background-blend-mode: var(--backop); */
+    /* background-position: center; */
+    /* width: 100vw;
+    height: 34rem; */
+    border-radius: 0rem;
+    animation: boxGrow 1s ease-in-out both; 
+    animation-timeline: view(50% 0%);
+}
+@keyframes boxGrow{
+    from {
+        
+    }
+    to {
+        /* width: 100vw;
+        height: 38rem;
+        border-radius: 0rem; */
+    }
+}
+
+
+.back{
+    background-image: url("/noise.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
