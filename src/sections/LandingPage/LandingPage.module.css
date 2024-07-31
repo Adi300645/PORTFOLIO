@@ -11,10 +11,9 @@
 
 .morningBirds{
     background-image: url("/mbirds.jpg");
-    background-size: 150%;
+    background-size: cover;
     background-position: center; 
-    animation: zooming 1s ease-in-out both;
-    animation-timeline: view(auto auto);
+    
 }
 
 @keyframes zooming{
