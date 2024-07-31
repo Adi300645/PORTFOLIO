@@ -89,6 +89,13 @@ body {
     /* background-color: red; */
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: none;
+    }
+}
+
+
 .mixBlurr {
 
     backdrop-filter: blur(250px);
