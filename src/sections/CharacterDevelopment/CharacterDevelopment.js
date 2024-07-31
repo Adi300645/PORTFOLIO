@@ -2,9 +2,15 @@ import { Poppins } from "next/font/google";
 import React, { useState } from "react";
 const poppins = Poppins({ subsets: ["latin"],display:"swap", weight: ["600"] });
 import styles from "./CharacterDevelopment.module.css";
+import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
 function CharacterDevelopment() {
     const [isLightOn, toogleLight] = useState(false);
+
+    const isPortrait = useOrientation();
+    if (isPortrait) return (<div className="mt-16"> 
+    <div>I am Character</div>
+    </div>);
 
     return (
         <div className={`flex items-center justify-center flex-col `}>

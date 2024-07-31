@@ -36,7 +36,7 @@ export default function Home() {
             <CharacterDevelopment></CharacterDevelopment>
             <AboutMe></AboutMe>
             <div className="w-full h-16 bg-[#E6E6E6] dark:bg-[#242424] flex items-center justify-center">
-                <div className="w-[80rem] flex items-center justify-between">
+                <div className="xl:w-[80rem] w-screen mx-4 flex items-center justify-between">
                     <div>Radhe Krishna</div>
                     <div className="flex [&>*]:mx-2">
                         <BiLogoGmail size={28} className=""></BiLogoGmail>

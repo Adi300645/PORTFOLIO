@@ -8,8 +8,15 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
 function Achivements() {
+
+    const isPortrait = useOrientation();
+    if (isPortrait) return (<div className="mt-16"> 
+    <div>I am Achivements</div>
+    </div>);
+
     return (
         <div className="w-[92rem] flex flex-col relative">
             <div

@@ -1,8 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./AboutMe.module.css";
+import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
 function AboutMe() {
+
+    const isPortrait = useOrientation();
+    if (isPortrait) return (<div className="mt-16"> 
+    <div>I am Aboute ME</div>
+    </div>);
+
     return (
         <div
             className={`bg-[#5555554c] h-[42rem] shadow-inner w-screen flex justify-center items-center ${styles.colorfullBack}`}

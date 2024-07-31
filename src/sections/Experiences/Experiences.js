@@ -1,6 +1,13 @@
+import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 import React from "react";
 
 function Experiences() {
+
+    const isPortrait = useOrientation();
+    if (isPortrait) return (<div className="mt-16"> 
+    <div>I am Experiences</div>
+    </div>);
+
     return (
         <div className="my-12 ">
             <div className="w-[92rem] flex justify-start">

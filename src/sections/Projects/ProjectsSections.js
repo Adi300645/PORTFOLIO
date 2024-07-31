@@ -5,9 +5,14 @@ import ProjectsCard from "@/components/ProjectsCard/ProjectsCard";
 import WorkCard from "@/components/WorkCard/WorkCard";
 import PhotoCard from "@/components/PhotoCard/PhotoCard";
 import BigProjectCard from "@/components/BigProjectCard/BigProjectCard";
+import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
 function ProjectsSections() {
 
+    const isPortrait = useOrientation();
+    if (isPortrait) return (<div className="mt-16"> 
+    <div>I am Projects</div>
+    </div>);
 
     return (
         <div className="flex flex-col w-screen justify-center items-center relative">

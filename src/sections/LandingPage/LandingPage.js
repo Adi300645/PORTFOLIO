@@ -9,7 +9,7 @@ const inika = Inika({ subsets: ["latin"],display:"swap", weight: ["400", "700"] 
 function LandingPage() {
     const isPortrait = useOrientation();
     if (isPortrait) return (<div className="mt-16"> 
-    <div>I am portrait</div>
+    <div>I am Landing Page</div>
     </div>);
     return (
         <div className="flex w-screen justify-center items-center relative">
