@@ -39,7 +39,7 @@ function LandingPage() {
                 <div className={`mt-4 capitalize ${poppinsBold.className} text-2xl`}>{day}</div>
                 <div className={`${poppinsLight.className}`}>9:45 am</div>
                 <div className={`h-[90vw] mt-6 relative  ${styles.morningBirds}`}>
-                    <div className={`absolute bottom-2 left-4 ${poppinsLight.className}`}>"Hey this is a Quote to chill"</div>
+                    <div className={`absolute bottom-2 left-4 ${poppinsLight.className}`}>&quot; Hey this is a Quote to chill &quot;</div>
                 </div>
                 </div>
             </div>
