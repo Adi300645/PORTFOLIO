@@ -29,7 +29,7 @@ function LandingPage() {
     const weekday = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
     const d = new Date();
     let day = weekday[d.getDay()];
-
+    const ct = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
     const isPortrait = useOrientation();
     if (isPortrait)
         return (
@@ -37,8 +37,8 @@ function LandingPage() {
                 <div className="mx-8">
 
                 <div className={`mt-4 capitalize ${poppinsBold.className} text-2xl`}>{day}</div>
-                <div className={`${poppinsLight.className}`}>9:45 am</div>
-                <div className={`h-[90vw] mt-6 relative  ${styles.morningBirds}`}>
+                <div className={`${poppinsLight.className}`}>{ct}</div>
+                <div className={`h-[90vw] mt-2 relative rounded  ${styles.morningBirds}`}>
                     <div className={`absolute bottom-2 left-4 ${poppinsLight.className}`}><q>Hey this is a Quote to chill</q></div>
                 </div>
                 </div>
