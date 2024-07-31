@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import React, { useState } from "react";
-const poppins = Poppins({ subsets: ["latin"], weight: ["600"] });
+const poppins = Poppins({ subsets: ["latin"],display:"swap", weight: ["600"] });
 import styles from "./CharacterDevelopment.module.css";
 
 function CharacterDevelopment() {

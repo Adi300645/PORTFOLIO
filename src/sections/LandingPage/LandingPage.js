@@ -3,8 +3,8 @@ import styles from "./LandingPage.module.css";
 import { Poppins, Inika } from "next/font/google";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["600"] });
-const inika = Inika({ subsets: ["latin"], weight: ["400", "700"] });
+const poppins = Poppins({ subsets: ["latin"],display:"swap", weight: ["600"] });
+const inika = Inika({ subsets: ["latin"],display:"swap", weight: ["400", "700"] });
 
 function LandingPage() {
     const isPortrait = useOrientation();

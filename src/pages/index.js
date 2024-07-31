@@ -12,7 +12,8 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import { BiLogoGmail } from "react-icons/bi";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"],display:"swap"
+ });
 
 export default function Home() {
     return (
