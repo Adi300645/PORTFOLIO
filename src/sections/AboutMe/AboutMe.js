@@ -82,12 +82,11 @@ function AboutMe() {
                     </form>
                     <p class="ms-auto text-xs text-gray-500 dark:text-gray-400">
                         I am glad to have you scrolling till last{" "}
-                        <a
-                            href="/"
+                        <button
                             class="text-blue-600 dark:text-blue-500 hover:underline"
                         >
                             Expore
-                        </a>
+                        </button>
                         
                     </p>
                 </div>
