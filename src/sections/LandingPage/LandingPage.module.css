@@ -9,6 +9,12 @@
     animation: slideDown 0.75s;
 }
 
+.morningBirds{
+    background-image: url("/mbirds.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
 .LightUp::after {
     content: '';
   width: 0px;

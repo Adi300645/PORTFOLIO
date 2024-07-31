@@ -3,14 +3,47 @@ import styles from "./LandingPage.module.css";
 import { Poppins, Inika } from "next/font/google";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
-const poppins = Poppins({ subsets: ["latin"],display:"swap", weight: ["600"] });
-const inika = Inika({ subsets: ["latin"],display:"swap", weight: ["400", "700"] });
+const poppins = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["600"],
+});
+const poppinsLight = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["400"],
+});
+
+const poppinsBold = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["700"],
+})
+const inika = Inika({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["400", "700"],
+});
 
 function LandingPage() {
+    const weekday = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
+    const d = new Date();
+    let day = weekday[d.getDay()];
+
     const isPortrait = useOrientation();
-    if (isPortrait) return (<div className="mt-16"> 
-    <div>I am Landing Page</div>
-    </div>);
+    if (isPortrait)
+        return (
+            <div className="mt-14 w-screen">
+                <div className="mx-8">
+
+                <div className={`mt-4 capitalize ${poppinsBold.className} text-2xl`}>{day}</div>
+                <div className={`${poppinsLight.className}`}>9:45 am</div>
+                <div className={`h-[90vw] mt-6 relative  ${styles.morningBirds}`}>
+                    <div className={`absolute bottom-2 left-4 ${poppinsLight.className}`}>"Hey this is a Quote to chill"</div>
+                </div>
+                </div>
+            </div>
+        );
     return (
         <div className="flex w-screen justify-center items-center relative">
             {/* <div className="blur w-9 h-9 bg-blue-500 absolute"> </div>
