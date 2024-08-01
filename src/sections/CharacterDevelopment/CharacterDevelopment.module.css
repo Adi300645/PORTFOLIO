@@ -9,7 +9,26 @@
     /* background-size: cover; */
 }
 
+.clipBack{
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+    background-image: url("/noise.png"),url("/clif hanger.jpg");
+    background-size: cover,60%;
+    background-blend-mode: multiply;
+    background-position: center;
+    animation: growBackSmall 1s ease-in-out;
+    animation-timeline: view(auto auto);
+}
 
+
+
+@keyframes growBackSmall{
+    from {
+        background-size: cover,100%;
+    }
+    to {
+        background-size: cover,150%;
+    }
+}
 @keyframes growBack{
     from {
         background-size: cover,50%;

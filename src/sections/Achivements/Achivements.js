@@ -14,7 +14,7 @@ import { Poppins } from "next/font/google";
 const poppinsBold = Poppins({
     subsets: ["latin"],
     display: "swap",
-    weight: ["700"],
+    weight: ["600"],
 });
 const poppinsNorm = Poppins({
     subsets: ["latin"],
@@ -29,12 +29,12 @@ function Achivements() {
             <div className="mt-4 w-screen">
                 <div className="mx-6">
                     <div
-                        className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}
+                        className={`mt-4 capitalize ${poppinsBold.className} text-2xl`}
                     >
-                        Experiences
+                        Achivements
                     </div>
                     <div
-                        className="h-56 w-full bg-cover shadow mt-3 flex flex-col dark:rounded dark:border-2 dark:border-[#777] overflow-hidden"
+                        className="h-56 w-full bg-cover shadow-xl mt-3 flex flex-col dark:rounded dark:border-2 bg-white dark:bg-transparent dark:border-[#777] overflow-hidden"
                     >
                         <div
                             className="h-32 bg-cover"
