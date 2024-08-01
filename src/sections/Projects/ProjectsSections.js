@@ -35,7 +35,7 @@ function ProjectsSections() {
                     <div
                         className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}
                     >
-                        Aditiya's Projects
+                        Aditiya&apos;s Projects
                     </div>
                     <div>
                     <ProjectsCard projectName={"Verico"}></ProjectsCard>

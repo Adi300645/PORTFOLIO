@@ -35,10 +35,13 @@ function Experiences() {
                             <div className="bg-slate-800 h-[0.25px] w-[2vw] ml-8"></div>
                             <div className="bg-slate-800 h-[0.25px] w-[8vw] mx-1"></div>
                         </div>
-                        <div className="w-full h-56 bg-cover" style={{backgroundImage : "url('https://picsum.photos/500')",}}>
-                            <img src=""></img>
-                        
-                        </div>
+                        <div
+                            className="w-full h-56 bg-cover"
+                            style={{
+                                backgroundImage:
+                                    "url('https://picsum.photos/500')",
+                            }}
+                        ></div>
                         <div className="mt-2">
                             Duis nisi laboris officia aliquip nostrud eiusmod
                             enim duis. Minim incididunt ad aute Lorem commodo
