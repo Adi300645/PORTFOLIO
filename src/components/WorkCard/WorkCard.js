@@ -7,7 +7,7 @@ function WorkCard({ projectName }) {
 
     if (isPortrait) {
         return (
-            <div class="bg-white dark:bg-transparent dark:border-[0.5px] dark:border-[#aaaaaa50] dark:rounded backdrop-blur shadow p-3 m-2 my-4 flex reveal">
+            <div class="bg-white dark:bg-transparent dark:border-[0.5px] dark:border-[#aaaaaa50] dark:rounded backdrop-blur shadow p-3 m-0 my-4 flex reveal">
                 <div class="w-full h-64 bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:shadow-2xl dark:border-[0.5px] dark:border-[#99999922] dark:rounded flex items-center justify-center">
                     <div class="text-gray-500 dark:text-white inner_text_shadow font-semibold">
                         {projectName}

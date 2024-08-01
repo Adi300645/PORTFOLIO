@@ -30,7 +30,7 @@ function ProjectsSections() {
     if (isPortrait)
         return (
             <div className="mt-4 w-screen">
-                <div className="mx-8 mt-2">
+                <div className="mx-6 mt-2">
                     <div>Explore</div>
                     <div
                         className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}

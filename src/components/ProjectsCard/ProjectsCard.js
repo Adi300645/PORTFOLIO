@@ -8,7 +8,7 @@ function ProjectsCard({projectName}) {
     const isPortrait = useOrientation()
     if (isPortrait){
         return (<div
-            class={`bg-white dark:bg-transparent reveal dark:backdrop-blur-xl flex flex-col dark:border-[0.5px] dark:rounded dark:border-[#aaa6] shadow-lg p-3 m-2 my-4 ${styles.parallelScroll}`}
+            class={`bg-white dark:bg-transparent reveal dark:backdrop-blur-xl flex flex-col dark:border-[0.5px] dark:rounded dark:border-[#aaa6] shadow-lg p-3 mx-0 my-4 ${styles.parallelScroll}`}
         >
             <div class="w-full min-h-48 bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:border-2 dark:rounded  dark:border-[#99999922] dark:shadow-2xl flex items-center justify-center self-center">
                 <div class="text-gray-500 inner_text_shadow font-semibold">
