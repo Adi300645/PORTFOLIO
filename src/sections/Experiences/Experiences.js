@@ -19,13 +19,13 @@ function Experiences() {
     if (isPortrait)
         return (
             <div className="mt-4 w-screen">
-                <div className="mx-8">
+                <div className="mx-6">
                     <div
                         className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}
                     >
                         Experiences
                     </div>
-                    <div className="flex flex-col mt-4 pl-6 py-4 shadow-xl bg-white">
+                    <div className="flex flex-col mt-4 pl-6 py-4 shadow-xl bg-white dark:bg-transparent ">
                         <div className="flex justify-start items-center">
                             <div
                                 className={`my-4 text-2xl ${josefinSans.className}`}
@@ -36,8 +36,8 @@ function Experiences() {
                             <div className="bg-slate-800 h-[0.25px] w-[8vw] mx-1"></div>
                         </div>
                         <div
-                            className="w-full h-56 bg-cover"
-                            style={{
+                            className="w-full h-48 bg-cover"
+                            style= {{
                                 backgroundImage:
                                     "url('https://picsum.photos/500')",
                             }}
