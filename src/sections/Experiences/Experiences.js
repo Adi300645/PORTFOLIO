@@ -42,7 +42,7 @@ function Experiences() {
                                     "url('https://picsum.photos/500')",
                             }}
                         ></div>
-                        <div className="mt-2">
+                        <div className="mt-2 mr-4">
                             Duis nisi laboris officia aliquip nostrud eiusmod
                             enim duis. Minim incididunt ad aute Lorem commodo
                             sunt Lorem. Occaecat laborum ut duis reprehenderit
