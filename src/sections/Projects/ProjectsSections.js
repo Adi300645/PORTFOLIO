@@ -6,13 +6,48 @@ import WorkCard from "@/components/WorkCard/WorkCard";
 import PhotoCard from "@/components/PhotoCard/PhotoCard";
 import BigProjectCard from "@/components/BigProjectCard/BigProjectCard";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["600"],
+});
+const poppinsLight = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["400"],
+});
+
+const poppinsBold = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["700"],
+});
 
 function ProjectsSections() {
-
     const isPortrait = useOrientation();
-    if (isPortrait) return (<div className="mt-16"> 
-    <div>I am Projects</div>
-    </div>);
+    if (isPortrait)
+        return (
+            <div className="mt-4 w-screen">
+                <div className="mx-8 mt-2">
+                    <div>Explore</div>
+                    <div
+                        className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}
+                    >
+                        Aditiya's Projects
+                    </div>
+                    <div>
+                    <ProjectsCard projectName={"Verico"}></ProjectsCard>
+                    <ProjectsCard projectName={"Apna Ghar"}></ProjectsCard>
+                    <PhotoCard projectName={"Uni chat"}></PhotoCard>
+                    <ProjectsCard projectName={"Vayu"}></ProjectsCard>
+                    <WorkCard projectName={"Psyco"}></WorkCard>
+                    <ProjectsCard projectName={"RTRA "}></ProjectsCard>
+                    </div>
+                </div>
+            </div>
+        );
 
     return (
         <div className="flex flex-col w-screen justify-center items-center relative">
@@ -26,7 +61,7 @@ function ProjectsSections() {
                     </div>
                 </div>
             </div>
-                <div className="w-[60rem] h-48 absolute dark:blur-[50px] bg-gradient-to-r dark:from-[#aaa] dark:to-[#2286aa92] rotateOpSpin opacity-65 rounded-full top-[68rem]"></div>
+            <div className="w-[60rem] h-48 absolute dark:blur-[50px] bg-gradient-to-r dark:from-[#aaa] dark:to-[#2286aa92] rotateOpSpin opacity-65 rounded-full top-[68rem]"></div>
             <div className="flex flex-col xl:flex-row justify-center my-4 relative">
                 <div className="w-[98rem] h-3 absolute blur-[25px] bg-gradient-to-r from-white  top-96"></div>
                 <div className="flex flex-col">
@@ -39,7 +74,6 @@ function ProjectsSections() {
                     <ProjectsCard projectName={"Vayu"}></ProjectsCard>
                     <ProjectsCard projectName={"RTRA "}></ProjectsCard>
                 </div>
-
             </div>
             <div className="w-[92rem] flex justify-start">
                 <div className="relative left-20 top-20">

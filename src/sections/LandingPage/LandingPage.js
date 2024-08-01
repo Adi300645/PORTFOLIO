@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./LandingPage.module.css";
 import { Poppins, Inika } from "next/font/google";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
@@ -27,9 +27,15 @@ const inika = Inika({
 
 function LandingPage() {
     const weekday = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
-    const d = new Date();
-    let day = weekday[d.getDay()];
-    const ct = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',second:"2-digit", hour12: true })
+    const [date,setDate] = useState(new Date()) ;
+
+    useEffect(()=>{
+        setInterval(()=>{
+            setDate(new Date())
+        },20000)
+    })
+    let day = weekday[date.getDay()];
+    const ct = date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
     const isPortrait = useOrientation();
     if (isPortrait)
         return (

@@ -1,12 +1,58 @@
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
+import { Poppins, Josefin_Sans } from "next/font/google";
 import React from "react";
 
-function Experiences() {
+const josefinSans = Josefin_Sans({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["500"],
+});
 
+const poppinsBold = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["700"],
+});
+
+function Experiences() {
     const isPortrait = useOrientation();
-    if (isPortrait) return (<div className="mt-16"> 
-    <div>I am Experiences</div>
-    </div>);
+    if (isPortrait)
+        return (
+            <div className="mt-4 w-screen">
+                <div className="mx-8">
+                    <div
+                        className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}
+                    >
+                        Experiences
+                    </div>
+                    <div className="flex flex-col mt-4 pl-6 py-4 shadow-xl bg-white">
+                        <div className="flex justify-start items-center">
+                            <div
+                                className={`my-4 text-2xl ${josefinSans.className}`}
+                            >
+                                Hansraj ventures
+                            </div>
+                            <div className="bg-slate-800 h-[0.25px] w-[2vw] ml-8"></div>
+                            <div className="bg-slate-800 h-[0.25px] w-[8vw] mx-1"></div>
+                        </div>
+                        <div className="w-full h-56 bg-cover" style={{backgroundImage : "url('https://picsum.photos/500')",}}>
+                            <img src=""></img>
+                        
+                        </div>
+                        <div className="mt-2">
+                            Duis nisi laboris officia aliquip nostrud eiusmod
+                            enim duis. Minim incididunt ad aute Lorem commodo
+                            sunt Lorem. Occaecat laborum ut duis reprehenderit
+                            exercitation nisi nisi deserunt culpa esse in do
+                            elit. Nisi ad tempor enim sint ut pariatur
+                            adipisicing anim non Lorem. Deserunt consequat
+                            proident consectetur laborum adipisicing esse do
+                            occaecat adipisicing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
 
     return (
         <div className="my-12 ">
@@ -24,7 +70,9 @@ function Experiences() {
                     <div class="text-4xl font-semibold text-gray-800 inner_text_shadow">
                         Hansraj Ventures
                     </div>
-                    <div class="text-gray-600 text-xs m-1 my-2">full stack developer</div>
+                    <div class="text-gray-600 text-xs m-1 my-2">
+                        full stack developer
+                    </div>
                 </div>
             </div>
         </div>
