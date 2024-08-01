@@ -9,13 +9,52 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
+import { Poppins } from "next/font/google";
+
+const poppinsBold = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["700"],
+});
+const poppinsNorm = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["500"],
+});
 
 function Achivements() {
-
     const isPortrait = useOrientation();
-    if (isPortrait) return (<div className="mt-16"> 
-    <div>I am Achivements</div>
-    </div>);
+    if (isPortrait)
+        return (
+            <div className="mt-4 w-screen">
+                <div className="mx-6">
+                    <div
+                        className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}
+                    >
+                        Experiences
+                    </div>
+                    <div
+                        className="h-56 w-full bg-cover shadow mt-3 flex flex-col dark:rounded dark:border-2 dark:border-[#777] overflow-hidden"
+                    >
+                        <div
+                            className="h-32 bg-cover"
+                            style={{
+                                backgroundImage:
+                                    "url('https://picsum.photos/500')",
+                            }}
+                        ></div>
+                        <div className={`mt-2 font-medium text-xl mx-3`}>
+                            Google Devloper heroman
+                        </div>
+                        <div className={`mt-2 mx-4 text-xs mb-3`}>
+                            Ad velit id adipisicing pariatur sunt incididunt
+                            labore voluptate exercitation ipsum.
+                            labore voluptate exercitation ipsum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
 
     return (
         <div className="w-[92rem] flex flex-col relative">

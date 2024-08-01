@@ -25,7 +25,7 @@ function Experiences() {
                     >
                         Experiences
                     </div>
-                    <div className="flex flex-col mt-4 pl-6 py-4 shadow-xl bg-white dark:bg-transparent ">
+                    <div className="flex flex-col mt-4 pl-6 py-4 shadow-xl bg-white dark:bg-transparent dark:border-2 dark:rounded-md border-[#777]">
                         <div className="flex justify-start items-center">
                             <div
                                 className={`my-4 text-2xl ${josefinSans.className}`}
