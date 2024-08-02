@@ -16,9 +16,9 @@ function CharacterDevelopment() {
         return (
             <div className="mt-16">
                 <div
-                    className={`${styles.clipBack} w-screen h-96 dark:bg-[#444] relative flex flex-col justify-center items-start`}
+                    className={`${styles.clipBack} w-screen h-96 dark:bg-[#2B2A33] bg-[#e5e5e5] relative flex flex-col justify-center items-start`}
                 >
-                    <div className=" mt-40 mx-10 font-bold text-xl">
+                    <div className=" mt-40 mx-8 font-bold text-xl">
                         <div>I am</div>
                         <div>not just a website</div>
                         <div className="mt-1 text-xs font-normal dark:text-[#aaa]">

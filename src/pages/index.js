@@ -11,11 +11,15 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import { BiLogoGmail } from "react-icons/bi";
+import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
 const inter = Inter({ subsets: ["latin"],display:"swap"
  });
 
 export default function Home() {
+
+    var isPortrait = useOrientation()
+
     return (
         <main
             className={`flex min-h-screen flex-col items-center ${inter.className}`}
@@ -39,11 +43,11 @@ export default function Home() {
                 <div className="xl:w-[80rem] w-screen mx-4 flex items-center justify-between">
                     <div>Radhe Krishna</div>
                     <div className="flex [&>*]:mx-2">
-                        <BiLogoGmail size={28} className=""></BiLogoGmail>
-                        <FaLinkedin size={30}></FaLinkedin>
-                        <FaInstagramSquare size={30}></FaInstagramSquare>
-                        <FaSquareGithub size={30}></FaSquareGithub>
-                        <SiLeetcode size={28}></SiLeetcode>
+                        <BiLogoGmail size={isPortrait == true ? 22 :28 } className=""></BiLogoGmail>
+                        <FaLinkedin size={isPortrait == true ? 24 :30 }></FaLinkedin>
+                        <FaInstagramSquare size={isPortrait == true ? 24 :30 }></FaInstagramSquare>
+                        <FaSquareGithub size={isPortrait == true ? 24 :30 }></FaSquareGithub>
+                        <SiLeetcode size={isPortrait == true ? 22 :28 }></SiLeetcode>
                     </div>
                 </div>
             </div>
