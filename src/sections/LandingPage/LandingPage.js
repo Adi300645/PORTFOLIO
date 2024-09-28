@@ -7,22 +7,26 @@ const poppins = Poppins({
     subsets: ["latin"],
     display: "swap",
     weight: ["600"],
+    adjustFontFallback: false
 });
 const poppinsLight = Poppins({
     subsets: ["latin"],
     display: "swap",
     weight: ["400"],
+    adjustFontFallback: false
 });
 
 const poppinsBold = Poppins({
     subsets: ["latin"],
     display: "swap",
     weight: ["700"],
+    adjustFontFallback: false
 })
 const inika = Inika({
     subsets: ["latin"],
     display: "swap",
     weight: ["400", "700"],
+    adjustFontFallback: false
 });
 
 function LandingPage() {

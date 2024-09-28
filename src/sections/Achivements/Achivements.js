@@ -7,7 +7,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 import { Poppins } from "next/font/google";
 
@@ -15,12 +14,9 @@ const poppinsBold = Poppins({
     subsets: ["latin"],
     display: "swap",
     weight: ["600"],
+    adjustFontFallback: false
 });
-const poppinsNorm = Poppins({
-    subsets: ["latin"],
-    display: "swap",
-    weight: ["500"],
-});
+
 
 function Achivements() {
     const isPortrait = useOrientation();

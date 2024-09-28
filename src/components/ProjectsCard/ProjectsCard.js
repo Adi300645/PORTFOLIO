@@ -10,11 +10,13 @@ const pixelify_Sans = Sansita({
     subsets: ["latin"],
     weight:["400","700","800","900"],
     display: "swap",
+    adjustFontFallback: false
 });
 const montserrat = Montserrat({
     subsets: ["latin"],
     weight:["400","700","800","900"],
     display: "swap",
+    adjustFontFallback: false
 });
 
 function ProjectsCard({

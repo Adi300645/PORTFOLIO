@@ -13,7 +13,7 @@ import { SiLeetcode } from "react-icons/si";
 import { BiLogoGmail } from "react-icons/bi";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
-const inter = Inter({ subsets: ["latin"],display:"swap"
+const inter = Inter({ subsets: ["latin"],display:"swap",adjustFontFallback: false
  });
 
 export default function Home() {

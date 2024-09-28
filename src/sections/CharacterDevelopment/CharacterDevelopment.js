@@ -5,6 +5,7 @@ const poppins = Poppins({
     subsets: ["latin"],
     display: "swap",
     weight: ["600"],
+    adjustFontFallback: false
 });
 import styles from "./CharacterDevelopment.module.css";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";

@@ -8,21 +8,12 @@ import BigProjectCard from "@/components/BigProjectCard/BigProjectCard";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({
-    subsets: ["latin"],
-    display: "swap",
-    weight: ["600"],
-});
-const poppinsLight = Poppins({
-    subsets: ["latin"],
-    display: "swap",
-    weight: ["400"],
-});
 
 const poppinsBold = Poppins({
     subsets: ["latin"],
     display: "swap",
     weight: ["700"],
+    adjustFontFallback: false
 });
 
 function ProjectsSections() {
