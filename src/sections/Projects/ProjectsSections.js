@@ -80,7 +80,7 @@ function ProjectsSections() {
                     <ProjectsCard
                         projectName={"Harmony"}
                         lightUrl={"/Showcase/harmonyLight.png"}
-                        darkUrl={"/Showcase/harmonyDark.png"}
+                        darkUrl={"/Showcase/HarmonyDark.png"}
                     ></ProjectsCard>
                     <PhotoCard projectName={"Uni chat"} lightUrl={"/Showcase/UNICHATLIGHT.png"} darkUrl={"/Showcase/UNICHATDark.png"}></PhotoCard>
                 </div>
