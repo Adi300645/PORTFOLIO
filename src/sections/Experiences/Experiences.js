@@ -1,5 +1,6 @@
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 import { Poppins, Josefin_Sans } from "next/font/google";
+import Image from "next/image";
 import React from "react";
 
 const josefinSans = Josefin_Sans({
@@ -32,7 +33,7 @@ function Experiences() {
                             <div
                                 className={`my-4 text-2xl ${josefinSans.className}`}
                             >
-                                Hansraj ventures
+                                Hansraj Ventures
                             </div>
                             <div className="bg-slate-800 h-[0.25px] w-[2vw] ml-8"></div>
                             <div className="bg-slate-800 h-[0.25px] w-[8vw] mx-1"></div>
@@ -45,14 +46,15 @@ function Experiences() {
                             }}
                         ></div>
                         <div className="mt-2 mr-4">
-                            Duis nisi laboris officia aliquip nostrud eiusmod
-                            enim duis. Minim incididunt ad aute Lorem commodo
-                            sunt Lorem. Occaecat laborum ut duis reprehenderit
-                            exercitation nisi nisi deserunt culpa esse in do
-                            elit. Nisi ad tempor enim sint ut pariatur
-                            adipisicing anim non Lorem. Deserunt consequat
-                            proident consectetur laborum adipisicing esse do
-                            occaecat adipisicing.
+                            During my internship at Hansraj Ventures, I worked as a Full Stack Developer where I:
+                            <ul className="list-disc ml-5 mt-2">
+                                <li>Developed and maintained responsive web applications using React for the frontend and Node.js for the backend.</li>
+                                <li>Implemented RESTful APIs to ensure seamless communication between frontend and backend components.</li>
+                                <li>Optimized database queries and enhanced data retrieval using MongoDB, resulting in a 30% performance improvement.</li>
+                                <li>Collaborated with cross-functional teams to design and integrate new features, improving user experience.</li>
+                                <li>Followed agile methodology, actively participating in daily stand-ups and sprint planning.</li>
+                                <li>Worked on bug fixes and optimized codebase, increasing the efficiency of the system.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -70,13 +72,32 @@ function Experiences() {
                 </div>
             </div>
             <div className="flex items-center h-[38rem] mx-20 bg-white shadow dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded">
-                <div className="p-4 rounded bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl"></div>
+                <div className="rounded flex justify-center p-8 items-center bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl">
+                    <Image src={"/Showcase/InternSVG.svg"} width={1500} height={1500}></Image>
+                </div>
                 <div className="p-4 w-full h-[95%] flex-[0.66] m-2 ">
                     <div class="text-4xl font-semibold text-gray-800 inner_text_shadow">
                         Hansraj Ventures
                     </div>
-                    <div class="text-gray-600 text-xs m-1 my-2">
-                        full stack developer
+                    <div class="opacity-65 text-xs m-1 my-2">
+                        Full Stack Developer
+                    </div>
+                    <div class="opacity-65 text-sm mt-2">
+                        During my internship at Hansraj Ventures, I contributed to several critical projects:
+                        <ul className="list-disc ml-5 mt-2 w-10/12">
+                            <li>Developed user-friendly web applications with a focus on performance and scalability using React, Node.js, and MongoDB.</li>
+                            <br/>
+                            <li>Collaborated with the design team to improve the UI/UX of existing platforms, ensuring responsiveness across devices.</li>
+                            <br/>
+                            <li>Created APIs for secure and efficient data flow between client-side and server-side components.</li>
+                            <br/>
+                            <li>Identified and fixed critical bugs, reducing downtime and improving system stability.</li>
+                            <br/>
+                            <li>Increased database performance through query optimization, enhancing the overall user experience.</li>
+                            <br/>
+                            <li>Implemented new features based on client feedback, improving the usability and functionality of the platform.</li>
+                            <br/>
+                        </ul>
                     </div>
                 </div>
             </div>
