@@ -32,6 +32,7 @@ function ProjectsCard({
     Email,
 }) {
     const isPortrait = useOrientation();
+    theme = "light";
     const { theme } = useTheme(); // Fetch the current theme
 
     // Portrait Mode
