@@ -11,17 +11,22 @@
     animation: rotate 50s infinite linear; /* Adjust the duration as needed */
 }
 
-.container{
-
+.hvrElement:hover + .mainText {
+    opacity: 0; /* Fade out when hovering over hvrElement */
+    transition: all 0.5s ease-in-out; /* Adjust the timing for fade-out */
 }
 
-
-.hvrElement:hover +  .mainText{
-    transition: all 0.25s ease-in-out;
-    opacity: 0;
+.mainText {
+    opacity: 1; /* Initial state */
+    transition: opacity 2s ease-in-out; /* Fade in transition */
 }
 
-.mainText{
-    transition: all 2s ease-in-out;
+.hiddenMessage {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Control the fade-in transition */
+    transition-delay: 0.5s; /* Delay the appearance after the fade-out of main text */
+}
 
+.hvrElement:hover ~ .hiddenMessage {
+    opacity: 1; /* Show after hover */
 }

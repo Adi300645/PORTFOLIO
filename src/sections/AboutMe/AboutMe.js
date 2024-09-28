@@ -11,9 +11,7 @@ function AboutMe() {
                 <div
                     className={`dark:bg-[#5555554c] bg-white shadow-inner w-screen flex justify-center items-center`}
                 >
-                    <div
-                        className={`flex items-center justify-start mt-6`}
-                    >
+                    <div className={`flex items-center justify-start mt-6`}>
                         {/* <div
                             className={`bg-black dark:bg-white  w-6 rounded mx-6 h-[30rem] hover:w-[75rem] duration-1000 absolute z-10 mix-blend-soft-light dark:mix-blend-soft-light ${styles.hvrElement}`}
                         ></div> */}
@@ -116,7 +114,16 @@ function AboutMe() {
             >
                 <div
                     className={`bg-black dark:bg-white  w-6 rounded mx-6 h-[30rem] hover:w-[75rem] duration-1000 absolute z-10 mix-blend-soft-light dark:mix-blend-soft-light ${styles.hvrElement}`}
-                ></div>
+                >
+                    <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <div
+                            className={`absolute inset-0 flex items-center justify-center text-white font-bold text-lg ${styles.mainText}`}
+                        >
+                            Thank You !!!
+                        </div>
+
+                    </div>
+                </div>
                 <div
                     className={`h-full w-[60rem] text-gray-800 dark:text-gray-200 flex-col z-0 relative left-28 ${styles.mainText}`}
                 >
