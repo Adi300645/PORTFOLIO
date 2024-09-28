@@ -38,12 +38,24 @@ function ProjectsSections() {
                         Aditiya&apos;s Projects
                     </div>
                     <div>
-                    <ProjectsCard projectName={"Verico"}></ProjectsCard>
-                    <ProjectsCard projectName={"Apna Ghar"}></ProjectsCard>
-                    <PhotoCard projectName={"Uni chat"}></PhotoCard>
-                    <ProjectsCard projectName={"Vayu"}></ProjectsCard>
-                    <WorkCard projectName={"Psyco"}></WorkCard>
-                    <ProjectsCard projectName={"RTRA "}></ProjectsCard>
+                        <ProjectsCard
+                            projectName={"Verico"}
+                            lightUrl={"/Showcase/SarthiAiLight.png"}
+                        ></ProjectsCard>
+                        <ProjectsCard
+                            projectName={"Apna Ghar"}
+                            lightUrl={"/Showcase/SarthiAiLight.png"}
+                        ></ProjectsCard>
+                        <PhotoCard projectName={"Uni chat"}></PhotoCard>
+                        <ProjectsCard
+                            projectName={"Vayu"}
+                            lightUrl={"/Showcase/SarthiAiLight.png"}
+                        ></ProjectsCard>
+                        <WorkCard projectName={"Psyco"}></WorkCard>
+                        <ProjectsCard
+                            projectName={"RTRA "}
+                            lightUrl={"/Showcase/SarthiAiLight.png"}
+                        ></ProjectsCard>
                     </div>
                 </div>
             </div>
@@ -65,14 +77,34 @@ function ProjectsSections() {
             <div className="flex flex-col xl:flex-row justify-center my-4 relative">
                 <div className="w-[98rem] h-3 absolute blur-[25px] bg-gradient-to-r from-white  top-96"></div>
                 <div className="flex flex-col">
-                    <ProjectsCard projectName={"Verico"}></ProjectsCard>
-                    <ProjectsCard projectName={"Apna Ghar"}></ProjectsCard>
-                    <PhotoCard projectName={"Uni chat"}></PhotoCard>
+                    <ProjectsCard
+                        projectName={"Sarthi AI"}
+                        isText={true}
+                        Email={"adityayadav300645@gmail.com"}
+                        tagLine={"Empowering Projects with the Intelligence of AI"}
+                        discription={
+                            "An all-in-one AI-powered platform designed to streamline project development. Sarthi AI offers an intuitive drag-and-drop desktop app, a coding assistant in VS Code, and a web interface to track your project's entire SDLC—everything you need to build faster and smarter "
+                        }
+                    ></ProjectsCard>
+                    <ProjectsCard
+                        projectName={"Harmony"}
+                        lightUrl={"/Showcase/harmonyLight.png"}
+                        darkUrl={"/Showcase/harmonyDark.png"}
+                    ></ProjectsCard>
+                    <PhotoCard projectName={"Uni chat"} lightUrl={"/Showcase/UNICHATLIGHT.png"} darkUrl={"/Showcase/UNICHATDark.png"}></PhotoCard>
                 </div>
                 <div className="flex flex-col">
-                    <WorkCard projectName={"Psyco"}></WorkCard>
-                    <ProjectsCard projectName={"Vayu"}></ProjectsCard>
-                    <ProjectsCard projectName={"RTRA "}></ProjectsCard>
+                    <WorkCard projectName={"Psyco"} lightUrl={"/Showcase/psycoLight.jpeg"} darkUrl={"/Showcase/psycoDark.jpeg"}></WorkCard>
+                    <ProjectsCard
+                        projectName={"Nirmaan"}
+                        lightUrl={"/Showcase/NirmaanLight.png"}
+                        darkUrl={"/Showcase/NirmaanDark.png"}
+                    ></ProjectsCard>
+                    <ProjectsCard
+                        projectName={"RTRA "}
+                        lightUrl={"/Showcase/RTRALIGHT.png"}
+                        darkUrl={"/Showcase/RTRADARK.png"}
+                    ></ProjectsCard>
                 </div>
             </div>
             <div className="w-[92rem] flex justify-start">
@@ -91,10 +123,18 @@ function ProjectsSections() {
                 </div>
                 <div className="xl:w-[76rem] flex justify-center my-4 relative flex-col xl:flex-row">
                     <div className="flex flex-col">
-                        <ProjectsCard></ProjectsCard>
+                        <ProjectsCard
+                        projectName={"Nirmaan AI"}
+                            lightUrl={"/Showcase/NirmaanAI.jpg"}
+                            darkUrl={"/Showcase/NirmaanAI.jpg"}
+                        ></ProjectsCard>
                     </div>
                     <div className="flex flex-col">
-                        <ProjectsCard></ProjectsCard>
+                        <ProjectsCard
+                        projectName={"House Resale Dashbord"}
+                            lightUrl={"/Showcase/HouseResale.jpg"}
+                            darkUrl={"/Showcase/HouseResale.jpg"}
+                        ></ProjectsCard>
                     </div>
                     <div
                         className={`h-[34rem] w-2 shadow bg-[#777] mx-6 rounded-b-xl mix-blend-hard-light ${styles.BarDown} -z-10 absolute -bottom-36 -left-32`}

@@ -8,6 +8,11 @@ module.exports = {
     './src/**/*.{js,jsx}',
   ],
   prefix: "",
+  safelist:[
+    {
+      pattern: /bg-+/,
+    },
+  ],
   theme: {
     container: {
       center: true,
