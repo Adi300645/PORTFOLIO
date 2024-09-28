@@ -32,8 +32,7 @@ function ProjectsCard({
     Email,
 }) {
     const isPortrait = useOrientation();
-    theme = "light";
-    const { theme } = useTheme(); // Fetch the current theme
+    var { theme } = useTheme(); // Fetch the current theme
 
     // Portrait Mode
     if (isPortrait) {
@@ -135,7 +134,7 @@ function ProjectsCard({
             <div
                 className={`w-[38rem] h-[36rem]  bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:border-2 dark:rounded dark:border-gray-300 dark:border-opacity-20 dark:shadow-2xl flex items-center justify-center`}
             >
-                    {theme === "light" ? (
+                    {theme !== "dark" ? (
                         <Image
                             src={lightUrl}
                             width={1500}
