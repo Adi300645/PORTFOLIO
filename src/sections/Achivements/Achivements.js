@@ -19,7 +19,7 @@ const poppinsBold = Poppins({
 });
 
 function Achivements() {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     if (isPortrait) {
         return (
             <div className="mt-4 w-screen">

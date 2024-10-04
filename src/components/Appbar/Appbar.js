@@ -4,7 +4,7 @@ import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientati
 
 function Appbar() {
 
-    const isPortrait = useOrientation()
+    const {isPortrait,isReady} = useOrientation()
     
     if(isPortrait){
         return (

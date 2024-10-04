@@ -13,7 +13,7 @@ import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientati
 function CharacterDevelopment() {
     const [isLightOn, toogleLight] = useState(false);
 
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     if (isPortrait)
         return (
             <div className="mt-16">

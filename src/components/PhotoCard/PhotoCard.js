@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 function PhotoCard({ projectName, lightUrl, darkUrl }) {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     const { theme } = useTheme();
 
     const imageComponent = (

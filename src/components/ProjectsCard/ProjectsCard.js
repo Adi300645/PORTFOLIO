@@ -31,7 +31,7 @@ function ProjectsCard({
     exploreLink,
     Email,
 }) {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     var { theme } = useTheme(); // Fetch the current theme
 
     // Portrait Mode

@@ -4,7 +4,7 @@ import styles from "./AboutMe.module.css";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
 function AboutMe() {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     if (isPortrait)
         return (
             <div className="w-screen relative bg-[#242424]">

@@ -18,7 +18,7 @@ const poppinsBold = Poppins({
 });
 
 function Experiences() {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     const cardStyle = "flex flex-col mt-4 p-6 shadow-xl bg-white dark:bg-transparent dark:border-2 dark:rounded-md border-[#777]";
 
     if (isPortrait)

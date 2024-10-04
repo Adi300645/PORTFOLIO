@@ -17,7 +17,7 @@ const poppinsBold = Poppins({
 });
 
 function ProjectsSections() {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     if (isPortrait) {
         return (
             <div className="mt-4 w-screen">

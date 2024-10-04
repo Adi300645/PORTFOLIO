@@ -4,7 +4,7 @@ import React from "react";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 
 function BigProjectCard() {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
 
     if (isPortrait) {
         return (

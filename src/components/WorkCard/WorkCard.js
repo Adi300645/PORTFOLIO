@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 
 function WorkCard({ projectName, lightUrl, darkUrl }) {
-    const isPortrait = useOrientation();
+    const {isPortrait,isReady} = useOrientation();
     const { theme } = useTheme();
 
     if (isPortrait) {
