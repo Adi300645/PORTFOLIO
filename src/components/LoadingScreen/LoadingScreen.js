@@ -32,7 +32,7 @@ const LoadingScreen = ({ onAnimationComplete }) => {
 
   return (
     <motion.div
-      className="fixed inset-0 bg-white dark:bg-gray-900 z-50 flex flex-col items-center justify-center"
+      className="fixed inset-0 bg-white dark:bg-gray-900  flex flex-col items-center justify-center -z-0"
       animate={backgroundControls}
       initial={{ opacity: 1 }}
     >
