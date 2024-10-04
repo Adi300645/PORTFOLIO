@@ -118,9 +118,6 @@ function ProjectsCard({
                     <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 inner_text_shadow">
                         {projectName}
                     </div>
-                    <div className="text-gray-600 dark:text-gray-400">
-                        Sub text
-                    </div>
                 </div>
             </div>
         );
@@ -158,7 +155,7 @@ function ProjectsCard({
                 <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 inner_text_shadow">
                     {projectName}
                 </div>
-                <div className="text-gray-600 dark:text-gray-400">Sub text</div>
+                <div className="text-gray-600 dark:text-gray-400">{discription}</div>
             </div>
         </div>
     );

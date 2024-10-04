@@ -8,48 +8,55 @@ import BigProjectCard from "@/components/BigProjectCard/BigProjectCard";
 import useOrientation from "@/customHooks/deviceInfo/useOrientation/useOrientation";
 import { Poppins } from "next/font/google";
 
-
 const poppinsBold = Poppins({
     subsets: ["latin"],
     display: "swap",
     weight: ["700"],
-    adjustFontFallback: false
+    adjustFontFallback: false,
 });
 
 function ProjectsSections() {
-    const {isPortrait,isReady} = useOrientation();
+    const { isPortrait, isReady } = useOrientation();
     if (isPortrait) {
         return (
             <div className="mt-4 w-screen">
                 <div className="mx-6 mt-2">
                     <div>Explore</div>
-                    <div className={`mt-1 capitalize ${poppinsBold.className} text-2xl mb-6`}>
+                    <div
+                        className={`mt-1 capitalize ${poppinsBold.className} text-2xl mb-6`}
+                    >
                         Aditiya&apos;s Projects
                     </div>
                     <div className="flex flex-col space-y-8">
                         <div>
-                            <h2 className="text-xl font-semibold mb-4">Development Projects</h2>
+                            <h2 className="text-xl font-semibold mb-4">
+                                Development Projects
+                            </h2>
                             <div className="space-y-6">
                                 <ProjectsCard
                                     projectName={"Sarthi AI"}
                                     isText={true}
                                     Email={"adityayadav300645@gmail.com"}
-                                    tagLine={"Empowering Projects with the Intelligence of AI"}
-                                    discription={"An all-in-one AI-powered platform designed to streamline project development. Sarthi AI offers an intuitive drag-and-drop desktop app, a coding assistant in VS Code, and a web interface to track your project's entire SDLC—everything you need to build faster and smarter"}
+                                    tagLine={
+                                        "Empowering Projects with the Intelligence of AI"
+                                    }
+                                    discription={
+                                        "An all-in-one AI-powered platform designed to streamline project development. Sarthi AI offers an intuitive drag-and-drop desktop app, a coding assistant in VS Code, and a web interface to track your project's entire SDLC—everything you need to build faster and smarter"
+                                    }
                                 />
                                 <ProjectsCard
                                     projectName={"Harmony"}
                                     lightUrl={"/Showcase/harmonyLight.png"}
                                     darkUrl={"/Showcase/HarmonyDark.png"}
                                 />
-                                <PhotoCard 
-                                    projectName={"Uni chat"} 
-                                    lightUrl={"/Showcase/UNICHATLIGHT.png"} 
+                                <PhotoCard
+                                    projectName={"Uni chat"}
+                                    lightUrl={"/Showcase/UNICHATLIGHT.png"}
                                     darkUrl={"/Showcase/UNICHATDark.png"}
                                 />
-                                <WorkCard 
-                                    projectName={"Psyco"} 
-                                    lightUrl={"/Showcase/psycoLight.jpeg"} 
+                                <WorkCard
+                                    projectName={"Psyco"}
+                                    lightUrl={"/Showcase/psycoLight.jpeg"}
                                     darkUrl={"/Showcase/psycoDark.jpeg"}
                                 />
                                 <ProjectsCard
@@ -65,7 +72,9 @@ function ProjectsSections() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-xl font-semibold mb-4">Data Science & ML Projects</h2>
+                            <h2 className="text-xl font-semibold mb-4">
+                                Data Science & ML Projects
+                            </h2>
                             <div className="space-y-6">
                                 <BigProjectCard />
                                 <ProjectsCard
@@ -106,27 +115,40 @@ function ProjectsSections() {
                         projectName={"Sarthi AI"}
                         isText={true}
                         Email={"adityayadav300645@gmail.com"}
-                        tagLine={"Empowering Projects with the Intelligence of AI"}
+                        tagLine={
+                            "Empowering Projects with the Intelligence of AI"
+                        }
                         discription={
                             "An all-in-one AI-powered platform designed to streamline project development. Sarthi AI offers an intuitive drag-and-drop desktop app, a coding assistant in VS Code, and a web interface to track your project's entire SDLC—everything you need to build faster and smarter "
                         }
                     ></ProjectsCard>
                     <ProjectsCard
                         projectName={"Harmony"}
+                        discription={"A web 3 based webiste to buy and sell properties !!"}
                         lightUrl={"/Showcase/harmonyLight.png"}
                         darkUrl={"/Showcase/HarmonyDark.png"}
                     ></ProjectsCard>
-                    <PhotoCard projectName={"Uni chat"} lightUrl={"/Showcase/UNICHATLIGHT.png"} darkUrl={"/Showcase/UNICHATDark.png"}></PhotoCard>
+                    <PhotoCard
+                        projectName={"Uni chat"}
+                        lightUrl={"/Showcase/UNICHATLIGHT.png"}
+                        darkUrl={"/Showcase/UNICHATDark.png"}
+                    ></PhotoCard>
                 </div>
                 <div className="flex flex-col">
-                    <WorkCard projectName={"Psyco"} lightUrl={"/Showcase/psycoLight.jpeg"} darkUrl={"/Showcase/psycoDark.jpeg"}></WorkCard>
+                    <WorkCard
+                        projectName={"Psyco"}
+                        lightUrl={"/Showcase/psycoLight.jpeg"}
+                        darkUrl={"/Showcase/psycoDark.jpeg"}
+                    ></WorkCard>
                     <ProjectsCard
                         projectName={"Nirmaan"}
+                        discription={"Building Construction and Awareness Application"}
                         lightUrl={"/Showcase/NirmaanLight.png"}
                         darkUrl={"/Showcase/NirmaanDark.png"}
                     ></ProjectsCard>
                     <ProjectsCard
                         projectName={"RTRA "}
+                        discription={"Renovation Tech Robotics and Aeromodelling based Collage club"}
                         lightUrl={"/Showcase/RTRALIGHT.png"}
                         darkUrl={"/Showcase/RTRADARK.png"}
                     ></ProjectsCard>
@@ -149,14 +171,14 @@ function ProjectsSections() {
                 <div className="xl:w-[76rem] flex justify-center my-4 relative flex-col xl:flex-row">
                     <div className="flex flex-col">
                         <ProjectsCard
-                        projectName={"Nirmaan AI"}
+                            projectName={"Nirmaan AI"}
                             lightUrl={"/Showcase/NirmaanAI.jpg"}
                             darkUrl={"/Showcase/NirmaanAI.jpg"}
                         ></ProjectsCard>
                     </div>
                     <div className="flex flex-col">
                         <ProjectsCard
-                        projectName={"House Resale Dashbord"}
+                            projectName={"House Resale Dashbord"}
                             lightUrl={"/Showcase/HouseResale.jpg"}
                             darkUrl={"/Showcase/HouseResale.jpg"}
                         ></ProjectsCard>
