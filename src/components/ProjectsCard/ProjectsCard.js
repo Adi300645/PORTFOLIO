@@ -36,47 +36,48 @@ function ProjectsCard({
 
     // Portrait Mode
     if (isPortrait) {
-        if (isText) {
-            return (
-                <div
-                    className={`bg-white dark:bg-transparent reveal dark:backdrop-blur-xl flex flex-col dark:border dark:border-opacity-50 dark:rounded shadow-lg p-3 my-4 ${styles.parallelScroll}`}
-                >
-                    <div className="w-full min-h-48 bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:border-2 dark:rounded dark:border-gray-300 dark:border-opacity-20 dark:shadow-2xl flex items-center justify-center">
-                        <div className="text-gray-500 font-semibold inner_text_shadow">
-                            {projectName}
-                        </div>
-                    </div>
-                    <div className="p-4">
-                        <div className="text-xl font-semibold text-gray-800 inner_text_shadow">
-                            {projectName}
-                        </div>
-                        <div className="text-gray-600">{tagLine}</div>
-                        <div className="mt-2 text-gray-500 dark:text-gray-300">
-                            {discription}
-                        </div>
-                    </div>
-                </div>
-            );
-        }
-        // If it's not text-based in portrait mode
         return (
-            <div
-                className={`bg-white dark:bg-transparent reveal dark:backdrop-blur-xl flex flex-col dark:border dark:border-opacity-50 dark:rounded shadow-lg p-3 my-4 ${styles.parallelScroll}`}
-            >
-                <div className="w-full min-h-48 bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:border-2 dark:rounded dark:border-gray-300 dark:border-opacity-20 dark:shadow-2xl flex items-center justify-center">
-                    <div className="text-gray-500 font-semibold inner_text_shadow">
-                        {projectName}
+            <div className={`bg-white dark:bg-transparent reveal dark:backdrop-blur-xl flex flex-col dark:border dark:border-opacity-50 dark:rounded shadow-lg p-3 my-4 ${styles.parallelScroll}`}>
+                {isText ? (
+                    <div className="w-full bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:border-2 dark:rounded dark:border-gray-300 dark:border-opacity-20 dark:shadow-2xl p-6">
+                        <h2 className={`text-gray-700 dark:text-green-50 font-bold text-3xl mb-2 ${pixelify_Sans.className}`}>
+                            {projectName}
+                        </h2>
+                        <p className="italic text-sm mb-4">{tagLine}</p>
+                        <p className={`text-gray-900 text-sm dark:text-gray-300 ${montserrat.className}`}>
+                            {discription}
+                        </p>
+                        <div className="flex flex-col mt-6 space-y-2">
+                            <a href={exploreLink} className="text-blue-600 dark:text-blue-400 hover:underline">
+                                Explore The Project
+                            </a>
+                            <a href={`mailto:${Email}`} className="text-blue-600 dark:text-blue-400 hover:underline">
+                                Email Me
+                            </a>
+                        </div>
                     </div>
-                </div>
+                ) : (
+                    <div className="w-full relative">
+                        <Image
+                            src={theme === "dark" ? darkUrl : lightUrl}
+                            layout="responsive"
+                            width={1500}
+                            height={1500}
+                            objectFit=""
+                            alt={projectName}
+                        />
+                    </div>
+                )}
                 <div className="p-4">
-                    <div className="text-xl font-semibold text-gray-800 inner_text_shadow">
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-1">
                         {projectName}
-                    </div>
-                    <div className="text-gray-600">Sub text</div>
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400">{tagLine}</p>
                 </div>
             </div>
         );
     }
+
 
     // Landscape Mode
     if (isText) {
@@ -129,10 +130,10 @@ function ProjectsCard({
     // Image-based rendering if `isText` is false
     return (
         <div
-            className={`bg-white dark:bg-transparent reveal dark:backdrop-blur-xl flex flex-col dark:border dark:border-opacity-50 dark:rounded shadow-lg p-3 m-2`}
+            className={`bg-white dark:bg-transparent reveal dark:backdrop-blur-xl flex flex-col dark:border dark:border-opacity-50 dark:rounded shadow-lg p-3 m-2 group`}
         >
             <div
-                className={`w-[38rem] h-[36rem]  bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:border-2 dark:rounded dark:border-gray-300 dark:border-opacity-20 dark:shadow-2xl flex items-center justify-center`}
+                className={`w-[38rem] h-[36rem] overflow-hidden bg-gray-200 dark:bg-transparent dark:backdrop-blur-3xl dark:border-2 dark:rounded dark:border-gray-300 dark:border-opacity-20 dark:shadow-2xl flex items-center justify-center`}
             >
                     {theme !== "dark" ? (
                         <Image
@@ -140,14 +141,14 @@ function ProjectsCard({
                             width={1500}
                             height={1500}
                             alt="Light Mode Image"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-all ease-in-out "
                         />
                     ) : (
                         <Image
                             src={darkUrl}
                             width={1500}
                             height={1500}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-all ease-in-out"
                             alt="Dark Mode Image"
                         />
                     )}

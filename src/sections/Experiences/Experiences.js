@@ -19,6 +19,8 @@ const poppinsBold = Poppins({
 
 function Experiences() {
     const isPortrait = useOrientation();
+    const cardStyle = "flex flex-col mt-4 p-6 shadow-xl bg-white dark:bg-transparent dark:border-2 dark:rounded-md border-[#777]";
+
     if (isPortrait)
         return (
             <div className="mt-4 w-screen">
@@ -28,7 +30,36 @@ function Experiences() {
                     >
                         Experiences
                     </div>
-                    <div className="flex flex-col mt-4 pl-6 py-4 shadow-xl bg-white dark:bg-transparent dark:border-2 dark:rounded-md border-[#777]">
+
+                    {/* Outlier AI Card */}
+                    <div className={cardStyle}>
+                        <div className="flex justify-start items-center">
+                            <div
+                                className={`my-4 text-2xl ${josefinSans.className}`}
+                            >
+                                Outlier AI
+                            </div>
+                            <div className="bg-slate-800 h-[0.25px] w-[2vw] ml-8"></div>
+                            <div className="bg-slate-800 h-[0.25px] w-[8vw] mx-1"></div>
+                        </div>
+                        <div
+                            className="w-full h-48 bg-cover"
+                            style={{
+                                backgroundImage: "url('https://picsum.photos/500')",
+                            }}
+                        ></div>
+                        <div className="mt-2 mr-4">
+                            I worked remotely at Outlier as a Coders - AI Training specialist where I:
+                            <ul className="list-disc ml-5 mt-2">
+                                <li>Engaged in AI training projects, performing tasks involving coding, data labeling, model evaluation, and quality assurance.</li>
+                                <li>Collaborated with team members through Discourse, ensuring clear and effective communication on remote projects.</li>
+                                <li>Completed project-specific training and delivered high-quality tasks, contributing to the continuous improvement of AI models.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Hansraj Ventures Card */}
+                    <div className={cardStyle}>
                         <div className="flex justify-start items-center">
                             <div
                                 className={`my-4 text-2xl ${josefinSans.className}`}
@@ -40,9 +71,8 @@ function Experiences() {
                         </div>
                         <div
                             className="w-full h-48 bg-cover"
-                            style= {{
-                                backgroundImage:
-                                    "url('https://picsum.photos/500')",
+                            style={{
+                                backgroundImage: "url('https://picsum.photos/500')",
                             }}
                         ></div>
                         <div className="mt-2 mr-4">
@@ -71,7 +101,35 @@ function Experiences() {
                     <div className="text-[#6C6C6C] font-medium inner_text_shadow"></div>
                 </div>
             </div>
-            <div className="flex items-center h-[38rem] mx-20 bg-white shadow dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded">
+
+            {/* Outlier AI Card */}
+            <div className="flex items-center h-[38rem] mx-20 bg-white shadow dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded mt-12">
+                <div className="rounded flex justify-center p-8 items-center bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl">
+                    <Image src={"/Showcase/InternSVG.svg"} width={1500} height={1500}></Image>
+                </div>
+                <div className="p-4 w-full h-[95%] flex-[0.66] m-2 ">
+                    <div class="text-4xl font-semibold text-gray-800 inner_text_shadow">
+                        Outlier AI
+                    </div>
+                    <div class="opacity-65 text-xs m-1 my-2">
+                        Coders - AI Training Specialist
+                    </div>
+                    <div class="opacity-65 text-sm mt-2">
+                        At Outlier AI, I contributed to several critical projects:
+                        <ul className="list-disc ml-5 mt-2 w-10/12">
+                            <li>Engaged in AI model training and data labeling tasks, ensuring accurate results and model quality.</li>
+                            <br />
+                            <li>Collaborated with team members via Discourse to stay updated on tasks and resolve issues effectively in a remote environment.</li>
+                            <br />
+                            <li>Participated in project-specific training to meet expectations and delivered high-quality output in each phase.</li>
+                            <br />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {/* Hansraj Ventures Card */}
+            <div className="flex items-center h-[38rem] mx-20 bg-white shadow dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded mt-12">
                 <div className="rounded flex justify-center p-8 items-center bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl">
                     <Image src={"/Showcase/InternSVG.svg"} width={1500} height={1500}></Image>
                 </div>
@@ -86,17 +144,17 @@ function Experiences() {
                         During my internship at Hansraj Ventures, I contributed to several critical projects:
                         <ul className="list-disc ml-5 mt-2 w-10/12">
                             <li>Developed user-friendly web applications with a focus on performance and scalability using React, Node.js, and MongoDB.</li>
-                            <br/>
+                            <br />
                             <li>Collaborated with the design team to improve the UI/UX of existing platforms, ensuring responsiveness across devices.</li>
-                            <br/>
+                            <br />
                             <li>Created APIs for secure and efficient data flow between client-side and server-side components.</li>
-                            <br/>
+                            <br />
                             <li>Identified and fixed critical bugs, reducing downtime and improving system stability.</li>
-                            <br/>
+                            <br />
                             <li>Increased database performance through query optimization, enhancing the overall user experience.</li>
-                            <br/>
+                            <br />
                             <li>Implemented new features based on client feedback, improving the usability and functionality of the platform.</li>
-                            <br/>
+                            <br />
                         </ul>
                     </div>
                 </div>

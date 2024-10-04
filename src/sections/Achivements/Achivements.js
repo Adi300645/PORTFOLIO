@@ -20,35 +20,59 @@ const poppinsBold = Poppins({
 
 function Achivements() {
     const isPortrait = useOrientation();
-    if (isPortrait)
+    if (isPortrait) {
         return (
             <div className="mt-4 w-screen">
                 <div className="mx-6">
-                    <div
-                        className={`mt-4 capitalize ${poppinsBold.className} text-2xl`}
-                    >
-                        Achivements
+                    <div className={`mt-4 capitalize ${poppinsBold.className} text-2xl`}>
+                        Achievements & Certifications
                     </div>
-                    <div className="h-56 w-full bg-cover shadow-xl mt-3 flex flex-col dark:rounded dark:border-2 bg-white dark:bg-transparent dark:border-[#777] overflow-hidden">
-                        <div
-                            className="h-32 bg-cover"
-                            style={{
-                                backgroundImage:
-                                    "url('https://picsum.photos/500')",
-                            }}
-                        ></div>
-                        <div className={`mt-2 font-medium text-xl mx-3`}>
-                            Google Devloper heroman
+                    <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                        presenting
+                    </div>
+                    
+                    {/* TransOrg Analytics */}
+                    <div className="h-80 w-full bg-cover shadow-xl mt-6 flex flex-col dark:rounded dark:border-2 bg-white dark:bg-transparent dark:border-[#777] overflow-hidden">
+                        <div className="h-48 bg-cover">
+                            <Image src="/Showcase/TransOrgAnalyticsBG.jpeg" width={1500} height={1500} className="w-full h-full object-cover" alt="TransOrg Analytics" />
                         </div>
-                        <div className={`mt-2 mx-4 text-xs mb-3`}>
-                            Ad velit id adipisicing pariatur sunt incididunt
-                            labore voluptate exercitation ipsum. labore
-                            voluptate exercitation ipsum.
+                        <div className={`mt-2 font-medium text-xl mx-3`}>
+                            TransOrg Analytics
+                        </div>
+                        <div className={`mt-2 mx-4 text-sm mb-3`}>
+                            Achieved First Runner-Up in a Data Science Hackathon by analyzing loan eligibility using Real Data
+                        </div>
+                    </div>
+
+                    {/* LeetCode */}
+                    <div className="h-80 w-full bg-cover shadow-xl mt-6 flex flex-col dark:rounded dark:border-2 bg-white dark:bg-transparent dark:border-[#777] overflow-hidden">
+                        <div className="h-48 bg-cover">
+                            <Image src="/Showcase/LCBGHD_LV.jpg" width={1500} height={1500} className="w-full h-full object-cover" alt="LeetCode" />
+                        </div>
+                        <div className={`mt-2 font-medium text-xl mx-3`}>
+                            LeetCode
+                        </div>
+                        <div className={`mt-2 mx-4 text-sm mb-3`}>
+                            Among Top 24% of coders rating : 1590 and Solved over 450+ Questions
+                        </div>
+                    </div>
+
+                    {/* Build-a-Thon */}
+                    <div className="h-80 w-full bg-cover shadow-xl mt-6 flex flex-col dark:rounded dark:border-2 bg-white dark:bg-transparent dark:border-[#777] overflow-hidden">
+                        <div className="h-48 bg-cover">
+                            <Image src="/Showcase/BuildATHON.jpg" width={1500} height={1500} className="w-full h-full object-cover" alt="Build-a-Thon" />
+                        </div>
+                        <div className={`mt-2 font-medium text-xl mx-3`}>
+                            Build-a-Thon
+                        </div>
+                        <div className={`mt-2 mx-4 text-sm mb-3`}>
+                            Made An web 3 based Application to buy and sell Properties
                         </div>
                     </div>
                 </div>
             </div>
         );
+    }
 
     return (
         <div className="w-[92rem] flex flex-col relative">

@@ -18,39 +18,73 @@ const poppinsBold = Poppins({
 
 function ProjectsSections() {
     const isPortrait = useOrientation();
-    if (isPortrait)
+    if (isPortrait) {
         return (
             <div className="mt-4 w-screen">
                 <div className="mx-6 mt-2">
                     <div>Explore</div>
-                    <div
-                        className={`mt-1 capitalize ${poppinsBold.className} text-2xl`}
-                    >
+                    <div className={`mt-1 capitalize ${poppinsBold.className} text-2xl mb-6`}>
                         Aditiya&apos;s Projects
                     </div>
-                    <div>
-                        <ProjectsCard
-                            projectName={"Verico"}
-                            lightUrl={"/Showcase/SarthiAiLight.png"}
-                        ></ProjectsCard>
-                        <ProjectsCard
-                            projectName={"Apna Ghar"}
-                            lightUrl={"/Showcase/SarthiAiLight.png"}
-                        ></ProjectsCard>
-                        <PhotoCard projectName={"Uni chat"}></PhotoCard>
-                        <ProjectsCard
-                            projectName={"Vayu"}
-                            lightUrl={"/Showcase/SarthiAiLight.png"}
-                        ></ProjectsCard>
-                        <WorkCard projectName={"Psyco"}></WorkCard>
-                        <ProjectsCard
-                            projectName={"RTRA "}
-                            lightUrl={"/Showcase/SarthiAiLight.png"}
-                        ></ProjectsCard>
+                    <div className="flex flex-col space-y-8">
+                        <div>
+                            <h2 className="text-xl font-semibold mb-4">Development Projects</h2>
+                            <div className="space-y-6">
+                                <ProjectsCard
+                                    projectName={"Sarthi AI"}
+                                    isText={true}
+                                    Email={"adityayadav300645@gmail.com"}
+                                    tagLine={"Empowering Projects with the Intelligence of AI"}
+                                    discription={"An all-in-one AI-powered platform designed to streamline project development. Sarthi AI offers an intuitive drag-and-drop desktop app, a coding assistant in VS Code, and a web interface to track your project's entire SDLC—everything you need to build faster and smarter"}
+                                />
+                                <ProjectsCard
+                                    projectName={"Harmony"}
+                                    lightUrl={"/Showcase/harmonyLight.png"}
+                                    darkUrl={"/Showcase/HarmonyDark.png"}
+                                />
+                                <PhotoCard 
+                                    projectName={"Uni chat"} 
+                                    lightUrl={"/Showcase/UNICHATLIGHT.png"} 
+                                    darkUrl={"/Showcase/UNICHATDark.png"}
+                                />
+                                <WorkCard 
+                                    projectName={"Psyco"} 
+                                    lightUrl={"/Showcase/psycoLight.jpeg"} 
+                                    darkUrl={"/Showcase/psycoDark.jpeg"}
+                                />
+                                <ProjectsCard
+                                    projectName={"Nirmaan"}
+                                    lightUrl={"/Showcase/NirmaanLight.png"}
+                                    darkUrl={"/Showcase/NirmaanDark.png"}
+                                />
+                                <ProjectsCard
+                                    projectName={"RTRA "}
+                                    lightUrl={"/Showcase/RTRALIGHT.png"}
+                                    darkUrl={"/Showcase/RTRADARK.png"}
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-semibold mb-4">Data Science & ML Projects</h2>
+                            <div className="space-y-6">
+                                <BigProjectCard />
+                                <ProjectsCard
+                                    projectName={"Nirmaan AI"}
+                                    lightUrl={"/Showcase/NirmaanAI.jpg"}
+                                    darkUrl={"/Showcase/NirmaanAI.jpg"}
+                                />
+                                <ProjectsCard
+                                    projectName={"House Resale Dashboard"}
+                                    lightUrl={"/Showcase/HouseResale.jpg"}
+                                    darkUrl={"/Showcase/HouseResale.jpg"}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         );
+    }
 
     return (
         <div className="flex flex-col w-screen justify-center items-center relative">
