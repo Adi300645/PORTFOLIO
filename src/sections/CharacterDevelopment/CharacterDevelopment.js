@@ -29,12 +29,16 @@ function CharacterDevelopment() {
                             everything happen.
                         </div>
                         <div className="flex py-4">
-                            <button className="px-2 py-1 bg-[#232323] text-white shadow dark:bg-white dark:text-black  rounded text-sm font-semibold">
+                            <a 
+                            href="https://www.linkedin.com/in/aditya-nandkishore-yadav-5a372b1b1/"
+                            className="px-2 py-1 bg-[#232323] text-white shadow dark:bg-white dark:text-black  rounded text-sm font-semibold">
                                 Contact
-                            </button>
-                            <button className="px-2 py-1 bg-white  dark:bg-[#232323] shadow dark:text-white rounded mx-4 text-sm font-semibold">
+                            </a>
+                            <a 
+                            href="https://github.com/ADITYA300645"
+                            className="px-2 py-1 bg-white  dark:bg-[#232323] shadow dark:text-white rounded mx-4 text-sm font-semibold">
                                 Explore
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -65,12 +69,16 @@ function CharacterDevelopment() {
                             everything happen.
                         </div>
                         <div className="flex py-4">
-                            <button className="px-4 py-2 bg-white text-black rounded">
+                            <a 
+                            href="https://www.linkedin.com/in/aditya-nandkishore-yadav-5a372b1b1/"
+                            className="px-4 py-2 bg-white text-black rounded">
                                 Contact
-                            </button>
-                            <button className="px-4 py-2 bg-white text-black rounded mx-4">
+                            </a>
+                            <a
+                            href="https://github.com/ADITYA300645"
+                            className="px-4 py-2 bg-white text-black rounded mx-4">
                                 Explore
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
