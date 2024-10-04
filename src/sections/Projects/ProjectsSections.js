@@ -10,7 +10,7 @@ import { Poppins } from "next/font/google";
 
 const poppinsBold = Poppins({
     subsets: ["latin"],
-    display: "swap",
+    // display: "swap",
     weight: ["700"],
     adjustFontFallback: false,
 });
