@@ -42,12 +42,8 @@ function Experiences() {
                             <div className="bg-slate-800 h-[0.25px] w-[2vw] ml-8"></div>
                             <div className="bg-slate-800 h-[0.25px] w-[8vw] mx-1"></div>
                         </div>
-                        <div
-                            className="w-full h-48 bg-cover"
-                            style={{
-                                backgroundImage: "url('https://picsum.photos/500')",
-                            }}
-                        ></div>
+                        <Image src={"/Showcase/Ai-Training-Port.jpeg"} className="w-full h-full overflow-hidden object-cover rounded" width={1500} height={1500}></Image>
+
                         <div className="mt-2 mr-4">
                             I worked remotely at Outlier as a Coders - AI Training specialist where I:
                             <ul className="list-disc ml-5 mt-2">
@@ -69,18 +65,11 @@ function Experiences() {
                             <div className="bg-slate-800 h-[0.25px] w-[2vw] ml-8"></div>
                             <div className="bg-slate-800 h-[0.25px] w-[8vw] mx-1"></div>
                         </div>
-                        <div
-                            className="w-full h-48 bg-cover"
-                            style={{
-                                backgroundImage: "url('https://picsum.photos/500')",
-                            }}
-                        ></div>
+                            <Image src={"/Showcase/App-Dev-Port.avif"} className="w-full h-full overflow-hidden object-cover rounded" width={1500} height={1500}></Image>
                         <div className="mt-2 mr-4">
-                            During my internship at Hansraj Ventures, I worked as a Full Stack Developer where I:
+                            During my internship at Hansraj Ventures, I worked as a <span className="font-bold"> Full Stack Flutter Developer </span> where I:
                             <ul className="list-disc ml-5 mt-2">
                                 <li>Developed and maintained responsive web applications using React for the frontend and Node.js for the backend.</li>
-                                <li>Implemented RESTful APIs to ensure seamless communication between frontend and backend components.</li>
-                                <li>Optimized database queries and enhanced data retrieval using MongoDB, resulting in a 30% performance improvement.</li>
                                 <li>Collaborated with cross-functional teams to design and integrate new features, improving user experience.</li>
                                 <li>Followed agile methodology, actively participating in daily stand-ups and sprint planning.</li>
                                 <li>Worked on bug fixes and optimized codebase, increasing the efficiency of the system.</li>
@@ -104,8 +93,8 @@ function Experiences() {
 
             {/* Outlier AI Card */}
             <div className="flex items-center h-[38rem] mx-20 bg-white shadow dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded mt-12">
-                <div className="rounded flex justify-center p-8 items-center bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl">
-                    <Image src={"/Showcase/InternSVG.svg"} width={1500} height={1500}></Image>
+                <div className="rounded flex justify-center items-center bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl">
+                    <Image src={"/Showcase/Ai-Training.jpg"} className="w-full h-full overflow-hidden object-cover rounded" width={1500} height={1500}></Image>
                 </div>
                 <div className="p-4 w-full h-[95%] flex-[0.66] m-2 ">
                     <div class="text-4xl font-semibold text-gray-800 inner_text_shadow">
@@ -130,8 +119,8 @@ function Experiences() {
 
             {/* Hansraj Ventures Card */}
             <div className="flex items-center h-[38rem] mx-20 bg-white shadow dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded mt-12">
-                <div className="rounded flex justify-center p-8 items-center bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl">
-                    <Image src={"/Showcase/InternSVG.svg"} width={1500} height={1500}></Image>
+                <div className="rounded flex justify-center items-center bg-gray-300 w-full flex-[0.33] m-4 h-[96%] dark:bg-transparent dark:backdrop-blur dark:border-2 dark:border-[#aaa6] dark:rounded dark:shadow-xl">
+                    <Image src={"/Showcase/App-Dev.jpg"} className="w-full h-full overflow-hidden object-cover rounded" width={1500} height={1500}></Image>
                 </div>
                 <div className="p-4 w-full h-[95%] flex-[0.66] m-2 ">
                     <div class="text-4xl font-semibold text-gray-800 inner_text_shadow">
