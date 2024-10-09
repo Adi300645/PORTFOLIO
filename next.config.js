@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   env:{
     "EMAIL_USER":"anky3210@gmail.com",
-    "EMAIL_PASS":"amnk pmuw xcuw hsoz"
+    "EMAIL_PASS":"fmgf hrak jkfv opvr"
   }
 }
 
