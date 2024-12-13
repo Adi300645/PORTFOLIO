@@ -24,7 +24,6 @@ const inter = Inter({
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
-    const router = useRouter();
     const { isPortrait, isReady } = useOrientation();
 
     const handleLoadingComplete = () => {
